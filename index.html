@@ -1,1 +1,143 @@
-
+<!-- DEFINICIÓN DE TIPO DE DOCUMENTO EN HTML5 -->
+<!DOCTYPE html>
+<html>
+<!-- Marca la cabecera de una página (contiene el logotipo del sitio, 
+una imagen, un cuadro de búsqueda, a continuacion -->
+<head>
+	<!-- CODIFICACIÓN DE CARACTERES EN HTML5 -->
+	<meta charset="UTF-8">
+	<!-- LINK EN HTML5 -->
+	<link rel=”stylesheet” href=”styles.css” />
+	<!-- SCRIPT EN HTML5 -->
+	<script src=”sripts.js”></script>
+	<!-- Corregir formato letra -->
+	<title>www.decoramer.com</title>
+	<!-- Miralo en la pagina o link solo comentario para el desarrollador -->
+ </head>
+ <body>
+    <nav>
+    	<a href="/enlace1/">INICIO Enlace-1</a>
+    	<a href="/enlace2/">SOBRE NOSOTROS Enlace-2</a>
+    	<a href="/enlace3/">CONTACTO Enlace-3</a>
+    	<a href="/enlace4/">INFORMACION enlace-4</a>
+	</nav>
+  	
+  	<nav class="menu">
+  	  <ul>
+    	<li><a href="#">Inicio</a></li>
+    	<li><a href="#">Sobre nosotros</a></li>
+    	<li><a href="#">Contacto</a></li>
+  	  </ul>
+	</nav>
+  	
+  <h1 style="color: red; "> Gestor de Tarea</h1>
+  <section>
+    <table>
+  		<thead>
+  			<th id="t_id"></th>
+  			<th id="t_name"></th>
+  			<th id="t_todo"></th>
+  			<th id="t_prog"></th>
+  			<th id="t_done"></th>
+  	    </thead>
+     
+  	  <tbody>
+  		<tr>
+  		  <td>1:</td>		
+  		  <td class="name">Lavado de ropa</td>
+  		  <td class="ico">X</td>
+  		  <td class="ico"></td>
+  	      <td class="ico"></td>
+  		</tr>
+  		<tr>
+  		  <td>2: </td>
+  		  <td class=name>Ir al veterinario</td>
+  		  <td class="ico"></td>
+  		  <td class="ico">X</td>
+  		  <td class="ico"></td>
+  		</tr>
+		<tr>
+  		  <td>3: </td>
+  		  <td class=name>Escribir correo importante</td>
+  		  <td class="ico"></td>
+  		  <td class="ico"></td>
+  		  <td class="ico">X</td>
+  		</tr>  
+ 
+  		<tr></tr>
+  		<tr></tr>
+  	  </tbody>
+  	</table>  	
+  </section>
+  	<form>
+  	<h2 style="color: blue; "> Información de la tarea</h2>
+  	<div id="name">
+  	    <label for="task_name">Tarea</label>
+  	    <input type="text" id="task_name">
+  	</div>
+  	<label>Estado</label>
+  	<div id="state">
+  		<label for="task_todo">Pendiente</label>
+  		<input type="checkbox" id="task_todo" name="task_state" value="todo">
+  		<label for="task_prog">En Progreso</label>
+  		<input type="checkbox" id="task_prog" name="task_state" value="Progreso">
+  		<label for="task_done">Hecha</label>
+  	  	<input type="checkbox" id="task_done" name="task_state" value="solo lectura" readonly>
+  	</div>
+  	<div id="detail">
+		<label for="task_detail">Detalle:</label>
+		<textarea id="task_detail" name="task_detail"></textarea>
+  	</div>
+  	
+  	<!-- seleccione una divisa: -->
+  	
+	<h3 style="color: green ; "> Seleccione una DIVISA de pago: </h3>
+	<label for="task_moned">Moneda</label>
+	<select>
+		<option value=”dolar”>dolar($)</option>
+		<option value=”libra”>libra(£)</option>
+		<option value="Euro" selected>Euro(€)  </option>
+		<option value=”yen” disabled>Yen(¥)</option>
+	</select>
+  	<h4></h4>
+ 
+  	<label style="color: red; ">Para entrega de su factura</label><br>
+  	Nombre: <input type="text" name="nombre"/>
+  	Apellido: <input type="text" name="apellido" placeholder="Ingrese su Apellido" /><br>
+    No Cédula: <input type="number" required="required"/><br>
+    <label for="correo">E-mail</label>
+	<input type="email" name="correo" id="correo" 
+		   pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" 
+		   required/><br>
+    
+    Fecha de nacimiento <input type="date" />
+    
+    
+    <h6></h6>
+    <div>Selecciones una de las siguientes opciones:</div>
+    <div><input type=”button” value=”valor 1” />opción 1</div>
+    <div><input type=”radio” value=”valor 2” checked />opción 2</div>
+    <div><input type=”radio” value=”valor 3” />opción 3</div>
+    <h7></h7>
+    
+  	<div class="button">
+  	     <br>
+  	    <button type="submit">Guardar cambios</button>
+  	</div>
+  	<br>
+ 
+  	</form>
+</body>
+<footer>
+	<address>
+    WebMaster<br>
+    MAIL: alp8482@hotmail.com
+  	</address>
+  <ul>
+		<li><a href="aviso-legal.html">Aviso legal</a></li>
+		<li><a href="privacidad.html">Privacidad</a></li>
+		<li><a href="contactar.html">Contactar</a></li>
+	</ul>
+    <p>Copyright &copy; 2020-2022 Mgs.Alvaro Pérez, todos los derechos reservados.</p>
+</footer>
+</html>
